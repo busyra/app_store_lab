@@ -1,11 +1,12 @@
 <p id="notice"><%= notice %></p>
 <center>
-<h1>Listing Products</h1>
-    <%= form_tag products_path, :method => :get do %>
+  <h1>Listing Products</h1>
+  <%= form_tag products_path, :method => :get do %>
     <%= text_field_tag :search, params[:search] %>
     <%= submit_tag "Search the App Store", :name => nil %>
-<% end %>
+  <% end %>
 </center>
+<hr>
 <table>
   <thead>
     <tr>
